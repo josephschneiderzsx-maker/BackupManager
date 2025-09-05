@@ -10,10 +10,23 @@ A simple tool to automatically back up MySQL databases on a schedule.
 
 ## Installation and Setup
 
-1.  Place the application folder on the computer you want to run backups from.
-2.  *   Run `BackupManager.exe` from an **elevated command prompt** (Run as administrator).
-3.  On the first run, a setup wizard will launch in the command-line window. You will only need to do this once.
-4.  Follow the prompts to configure your database connection, license, and backup schedule.
+*   To ensure proper functionality and performance, we recommend placing the application folder in a location without spaces in the path, such as C:\BackupManager. This can help avoid potential issues with command-line execution.
+*   Extract and Place the Folder: Move or copy the extracted BackupManager folder to a simple path like C:\ to get a path like C:\BackupManager.
+*   Run with Administrator Privileges: Open an elevated command prompt (Run as administrator) and navigate to the application folder.
+*   Initial Setup Wizard: On the first run, execute BackupManager.exe. A setup wizard will guide you through the configuration.
+*   Follow Prompts: Configure your license, database connection, MySQL binaries path, and backup schedule.
+
+## Advanced User Configuration
+
+*   For advanced users, adding the application's directory to the Windows Environment Variables simplifies command-line usage. This allows you to run BackupManager.exe with its arguments from any terminal without needing to navigate to the folder first. This is particularly useful for re-running the setup (--setup) or performing a manual backup (--run-now) from an administrator-level command prompt.
+
+## To add the path:
+
+*   Search for "Edit the system environment variables" in the Windows Start Menu.
+*   Click on Environment Variables.
+*   Under System variables, select the Path variable and click Edit.
+*   Click New and add the full path to your BackupManager folder (e.g., C:\BackupManager).
+*   Click OK on all windows to save the changes.
 
 ### Configuration Details
 
